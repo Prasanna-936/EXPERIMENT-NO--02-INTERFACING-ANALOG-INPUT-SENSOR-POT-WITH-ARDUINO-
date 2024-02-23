@@ -1,6 +1,7 @@
- INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
-
-
+## INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-
+## DATE : 23.02.2024
+## NAME : PRASANNA R																		             
+## ROLLNUMBER :212221220039
 
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
@@ -64,22 +65,79 @@ CIRCUIT DIAGRAM
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device 
 
+**CIRCUIT**
+
+<img width="523" alt="Screenshot 2024-02-23 155210" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/5ada0779-b595-45a2-90e9-00ca9d3da60c">
+
+
+FIGURE -02 OFF
+
+ <img width="392" alt="Screenshot 2024-02-23 155236" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/b2b6f7a0-0af1-4576-800b-1615a87c06e0">
+
+
+FIGURE -03 ON
+
+**SCHEMATIC DIAGRAM**
+
+
+<img width="659" alt="Screenshot 2024-02-23 154425" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/4865207f-ed8b-41ea-a17d-447ba711b7dc">
+
+
+
+FIGURE -04
+
+
+
 
 
 **PROGRAM** 
- 
+```
+int pot;
+int led=7;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
 
+void loop()
+{
+  pot=analogRead(A0);
+  //Serial.print("Value=");
+  Serial.println(pot);
+  if(pot>900){
+    digitalWrite(led, HIGH);
+    delay(500); // Wait for 500 millisecond(s)
+    digitalWrite(led, LOW);
+    delay(500); // Wait for 500 millisecond(s)
+  }
+  else{
+    
+    digitalWrite(led, LOW);
+    delay(500); // Wait for 500 millisecond(s)
+  }
+    
+  
+  
+}
 
-
-
-
-
-
-
+```
 
 **
 **Simulation output:** 
-**
+
+**SERIAL MONITOR**
+
+
+
+
+<img width="648" alt="Screenshot 2024-02-23 155431" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/2f0541cf-da50-48e0-88df-bcf1eef8f84c">
+
+
+
+
+FIGURE -05
+
 
 
 [My image](username.github.com/repository/img/image.jpg)
