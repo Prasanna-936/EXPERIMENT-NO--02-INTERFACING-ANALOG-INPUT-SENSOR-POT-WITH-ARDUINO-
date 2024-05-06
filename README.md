@@ -72,7 +72,7 @@ FIGURE -02 OFF
 
 FIGURE -03 ON
 
-## SCHEMATIC DIAGRAM
+#### SCHEMATIC DIAGRAM
 
 
 <img width="659" alt="Screenshot 2024-02-23 154425" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/4865207f-ed8b-41ea-a17d-447ba711b7dc">
@@ -80,7 +80,7 @@ FIGURE -03 ON
 
 
 FIGURE -04
-## PROGRAM
+#### PROGRAM
 ```
 int pot;
 int led=7;
@@ -112,9 +112,9 @@ void loop()
 }
 
 ```
-## Simulation output:
+#### Simulation output:
 
-## SERIAL MONITOR
+#### SERIAL MONITOR
 
 <img width="648" alt="Screenshot 2024-02-23 155431" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/2f0541cf-da50-48e0-88df-bcf1eef8f84c">
 
@@ -122,5 +122,4 @@ FIGURE -05
 
 
 
-
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+#### RESULT: Arduino uno analog input functioning is learned and interfaced with digital input switch .
