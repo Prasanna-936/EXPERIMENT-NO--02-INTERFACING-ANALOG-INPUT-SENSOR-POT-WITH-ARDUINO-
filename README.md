@@ -4,10 +4,10 @@
 ## ROLLNUMBER :212221220039
 
 
-**AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
+#### AIM:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
 
-**COMPONENTS REQUIRED:**
+#### COMPONENTS REQUIRED:
 1.	10 KΩPOT
 2.	1 KΩ resistor 
 3.	Arduino Uno 
@@ -16,10 +16,9 @@
 6.	LED of choice 
 **
 
+#### THEORY: 
 
-**THEORY**: 
-
-**Analog signals:**
+#### Analog signals:
 
 Analog signals – directly measurable quantities in terms of some other quantity.
 Examples:
@@ -39,21 +38,17 @@ General specifications of analog sensor
 	4.Compatiblity
 	5. signal conversion capability
 
-**Potentiometer**
+#### Potentiometer
 A potentiometer, informally a pot, is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider. If only two terminals are used, one end and the wiper, it acts as a variable resistor or rheostat.
 Potentiometers are commonly used to control electrical devices such as volume controls on audio equipment. Potentiometers operated by a mechanism can be used as position transducers, for example, in a joystick. Potentiometers are rarely used to directly control significant power (more than a watt), since the power dissipated in the potentiometer would be comparable to the power in the controlled load
 CIRCUIT DIAGRAM
-
-
-
-
 
 ![image](https://user-images.githubusercontent.com/36288975/163530788-eec3cdc3-95e8-4d2d-8349-6d0ea4c9439c.png)
 
 **FIGURE -01
 **
 
-**PROCEDURE:**
+#### PROCEDURE:
 
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
@@ -65,7 +60,7 @@ CIRCUIT DIAGRAM
 8.	Upload the program and check for the physical working. 
 9.	Ensure safety before powering up the device 
 
-**CIRCUIT**
+#### CIRCUIT
 
 <img width="523" alt="Screenshot 2024-02-23 155210" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/5ada0779-b595-45a2-90e9-00ca9d3da60c">
 
@@ -77,7 +72,7 @@ FIGURE -02 OFF
 
 FIGURE -03 ON
 
-**SCHEMATIC DIAGRAM**
+## SCHEMATIC DIAGRAM
 
 
 <img width="659" alt="Screenshot 2024-02-23 154425" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/4865207f-ed8b-41ea-a17d-447ba711b7dc">
@@ -85,12 +80,7 @@ FIGURE -03 ON
 
 
 FIGURE -04
-
-
-
-
-
-**PROGRAM** 
+## PROGRAM
 ```
 int pot;
 int led=7;
@@ -122,28 +112,13 @@ void loop()
 }
 
 ```
+## Simulation output:
 
-**
-**Simulation output:** 
-
-**SERIAL MONITOR**
-
-
-
+## SERIAL MONITOR
 
 <img width="648" alt="Screenshot 2024-02-23 155431" src="https://github.com/Prasanna-936/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/130341982/2f0541cf-da50-48e0-88df-bcf1eef8f84c">
 
-
-
-
 FIGURE -05
-
-
-
-[My image](username.github.com/repository/img/image.jpg)
-
-
-
 
 
 
